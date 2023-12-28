@@ -21,7 +21,10 @@ const FilterPage = async ({ searchParams }: Props) => {
   const { products, limit, total } = res;
   return (
     <>
-      <h2 className="text-xl px-4">Filtered Results</h2>
+      <h2 className="text-xl px-4">
+        Filtered Results for Price {type == "<" ? "less then" : "more then"}{" "}
+        {`"$${price}"`}
+      </h2>
       <ProductList products={products} limit={limit} total={total} />;
     </>
   );

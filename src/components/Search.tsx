@@ -38,7 +38,7 @@ const Search = () => {
   }, [inp]);
 
   return (
-    <div className=" flex gap-2  items-center z-20 w-full max-w-7xl mx-auto px-2">
+    <div className=" flex gap-2  items-center z-20 w-full max-w-7xl mx-auto px-2 bg-white">
       <form className="flex gap-2 w-full p-2" onSubmit={handleSubmit}>
         <button></button>
         <div className="relative max-w-xl mx-auto w-full">

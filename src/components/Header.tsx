@@ -12,7 +12,7 @@ import FilterProducts from "./FilterProducts";
 const Header = () => {
   const service = useContext(CartContext);
   return (
-    <div className="mb-8 flex flex-col gap-1">
+    <div className="sticky top-0 z-30 mb-8 flex flex-col shadow-sm">
       <div className="bg-slate-900 text-slate-50 py-6 float px-2 w-full">
         <div className="mx-auto max-w-7xl flex flex-wrap gap-1 items-center">
           <Link href={"/"} className="text-2xl font-semibold flex-1 w-full">
